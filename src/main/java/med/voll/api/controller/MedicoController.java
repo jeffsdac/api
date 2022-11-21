@@ -40,7 +40,7 @@ public class MedicoController {
 
     @DeleteMapping("/{id}")
     @Transactional
-    public void excluir(@PathVariable long id){
+    public void delete(@PathVariable long id){
         var medico = repository.getReferenceById(id);
         medico.desativarConta();
     }
