@@ -30,4 +30,29 @@ public class Endereco {
         this.numero = dados.numero();
         this.complemento = dados.complemento();
     }
+
+    public void atualizaDados(Endereco dados) {
+        if (dados.getLogradouro() != null){
+            this.logradouro = dados.getLogradouro();
+        }
+        if (dados.getBairro() != null){
+            this.bairro = dados.getBairro();
+        }
+        if (dados.getCep() != null){
+            this.cep = dados.getCep();
+        }
+        if (dados.getUf() != null){
+            this.uf = dados.getUf();
+        }
+        if (dados.getCidade() != null){
+            this.cidade = dados.getCidade();
+        }
+        if (dados.getNumero() != null){
+            this.numero = dados.getNumero();
+        }
+        if (dados.getComplemento() != null){
+            this.complemento = dados.getComplemento();
+        }
+
+    }
 }
